@@ -1,3 +1,5 @@
+package Clientes;
+
 public abstract class Cliente {
     private String nome;
     private String email;
@@ -13,5 +15,9 @@ public abstract class Cliente {
 
     public String getNome() {
         return nome;
+    }
+    public void exibirInfo(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Email: " + email);
     }
 }
